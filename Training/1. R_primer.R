@@ -1,5 +1,5 @@
 ##INTRODUCTION TO R####
-##JSG, 7/2/22
+##Jazmyn Gutierrez, 7/2/22
 
 #this is a broad introduction to how R works and what it can do
 #we'll return to individual topics in later sessions (both theory and practice)
@@ -117,7 +117,7 @@ x
 
 #YOUR FIRST FUNCTION####
 #now lets go back to the class thing and use our first function#
-class(x)
+/
 #class (above) is the first recognizable function you've used.  A function is a set of code
 #that has been given a name (saved as an  object).  The code states what type of input
 #(parameters or values, x in the case above) the code needs to run and produce some type of
@@ -248,8 +248,8 @@ file
 
 #which is then read by the read.csv function
 
-my_dataset <- read.csv(file, stringsAsFactors = T)
-
+my_dataset <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTg6PTT_WQLGQojUak8HO52HfkcJQzgXI2uLNPTrMW62WQ_tk4r8dmznCWGQDltOuAO7tyzB41VA_d8/pub?gid=0&single=true&output=csv", stringsAsFactors = T)
+loaded_data <- read.csv("Training/example_data.csv", stringsAsFactors =T)
 # Since ~2020 you need to as StringsAsFactors = T to read in characters as factors
 # (what we typically want)
 
